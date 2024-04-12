@@ -7,10 +7,10 @@ pipeline {
                     steps {
                         echo 'Executing numpy code'
                         git 'https://github.com/Jhunter1402/PythonProgram-Jenkins-FreeStyle.git'
-                        sh "python3.9 -m venv myvenv1"
-                        sh "source myvenv1/bin/activate"
+                        sh "python3.9 -m venv myvenv2"
+                        sh "source myvenv2/bin/activate"
                         sh "pip3.9 install -r requirments.txt"
-                        sh "python3.9 numpycode.py"
+                        sh "python3.9 numpy-pandas.py"
                         
                     }
                 }
