@@ -9,7 +9,7 @@ pipeline {
                         sh "python3.9 -m venv myvenv2"
                         sh "source myvenv2/bin/activate"
                         sh "pip3.9 install -r requirments.txt"
-                        sh "python3.9 numpy-pandas.py"
+                        sh "python3.9 pd_np.py"
                         
                     
                 }
