@@ -11,8 +11,6 @@ pipeline {
                         sh "source myvenv1/bin/activate"
                         sh "pip3.9 install -r requirments.txt"
                         sh "python3.9 numpycode.py"
-                        
-                    
                 }
         }
     }
